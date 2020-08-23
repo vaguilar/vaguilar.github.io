@@ -3,6 +3,8 @@ path: "/posts/2"
 date: "2016-05-02"
 title: "DIY Arduino Board Compatible with 5v and 3.3v"
 icon: "fa-bolt"
+redirect_from:
+  - /posts/2
 layout: post
 ---
 

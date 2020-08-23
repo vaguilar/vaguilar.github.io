@@ -3,6 +3,8 @@ path: "/posts/1"
 date: "2015-05-26"
 title: "Arbitrary Code Execution in Pokemon Red"
 icon: "fa-gamepad"
+redirect_from:
+  - /posts/1
 layout: post
 ---
 

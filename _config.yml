@@ -10,6 +10,7 @@ plugins:
   - jekyll-gist
   - jekyll-paginate
   - jekyll-seo-tag
+  - jekyll-redirect-from
 
 # Optimize Jekyll
 exclude:
@@ -28,7 +29,7 @@ sass:
 # Options
 
 # Replace this value and uncomment to enable Google Analytics tracking
-# ga_analytics: UA-000000-0
+ga_analytics: UA-63426008-1
 
 # Specify the author for blog posts
 author:
@@ -41,11 +42,23 @@ version: 3.0.0
 
 # Navbar page list
 nav:
-  - title: Blog
-    url: /archive
+# - title: About
+#   url: /about
 
-  - title: About
-    url: /about
+  - title: Twitter
+    icon: fab fa-twitter
+    url: https://twitter.com/vaguilar_
+    newTab: true
 
   - title: Github
+    icon: fab fa-github
     url: https://github.com/vaguilar
+    newTab: true
+
+  - title: Contact
+    icon: fas fa-envelope
+    url: "#"
+
+# - title: LinkedIn
+#   icon: fab fa-linkedin-in
+#   url: https://linkedin.com

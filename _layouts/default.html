@@ -8,9 +8,15 @@
         <h3 class="masthead-title">
           <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
 
-          <nav class="nav">
+          <nav class="nav" style="font-size: 1.5rem">
             {% for nav in site.nav %}
-            <small><a href="{{ nav.url }}">{{ nav.title }}</a></small>
+              {% if nav.newTab == true %}
+                <a href="{{ nav.url }}" target="_blank"><i class="{{ nav.icon }} fa-large">&nbsp;</i></a>
+              {% elsif nav.title == "Contact" %}
+                <a href="{{ nav.url }}" id="email"><i class="{{ nav.icon }} fa-large">&nbsp;</i></a>
+              {% else %}
+                <a href="{{ nav.url }}"><i class="{{ nav.icon }} fa-large">&nbsp;</i></a>
+              {% endif %}
             {% endfor %}
           </nav>
         </h3>
@@ -55,5 +61,13 @@
       ga("send", "pageview");
     </script>
     {% endif %}
+
+    <script>
+      var r = "znv" + "ygb:" + "in235" + "711" + "@" + "tznvy" + ".p" + "bz";
+      var e = r.replace(/[a-zA-Z]/g, function(c) {
+        return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);}
+      );
+      document.getElementById("email").href = e;
+    </script>
   </body>
 </html>
