@@ -4,12 +4,13 @@
 
 .masthead {
   padding-top: var(--spacer);
-  padding-bottom: var(--spacer);
   margin-bottom: var(--spacer-3);
 }
 
 .masthead-title {
+  font-family: var(--code-font);
   margin-bottom: 0;
+  font-style: italic;
 
   a {
     color: inherit;
