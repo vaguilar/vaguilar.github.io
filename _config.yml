@@ -22,6 +22,9 @@ exclude:
   - LICENSE.md
   - README.md
 
+keep_files:
+  - app-ads.txt
+
 sass:
   sass_dir: _sass
   style: :compressed
