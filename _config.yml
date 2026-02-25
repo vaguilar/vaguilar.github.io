@@ -21,6 +21,9 @@ exclude:
   - Gemfile.lock
   - LICENSE.md
   - README.md
+  - vendor
+  - vendor/bundle
+  - .bundle
 
 keep_files:
   - app-ads.txt
